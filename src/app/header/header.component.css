@@ -1,0 +1,46 @@
+.header {
+  background-color: #272727;
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  flex: 1;
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu li {
+  margin: 0 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.highlighted {
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.highlighted:hover {
+  background-color: #e04138;
+}
+
+.highlighted:hover a {
+  color: black;
+}

@@ -1,0 +1,41 @@
+<div class="header">
+  <div class="logo">
+    <img src="assets/images/Debuggy-icon.png" alt="Lolo" />
+  </div>
+  <div class="menu">
+    <ul>
+      <li
+        [@glowOnHover]="isHovered.home"
+        (mouseover)="onLiMouseOver('home')"
+        (mouseleave)="onLiMouseLeave('home')"
+        [ngClass]="{ highlighted: isHighlighted }"
+      >
+        <a href="#">Home</a>
+      </li>
+      <li
+        [@glowOnHover]="isHovered.products"
+        (mouseover)="onLiMouseOver('products')"
+        (mouseleave)="onLiMouseLeave('products')"
+        [ngClass]="{ highlighted: isHighlighted }"
+      >
+        <a href="#">Products</a>
+      </li>
+      <li
+        [@glowOnHover]="isHovered.aboutUs"
+        (mouseover)="onLiMouseOver('aboutUs')"
+        (mouseleave)="onLiMouseLeave('aboutUs')"
+        [ngClass]="{ highlighted: isHighlighted }"
+      >
+        <a href="#">About Us</a>
+      </li>
+      <li
+        [@glowOnHover]="isHovered.contact"
+        (mouseover)="onLiMouseOver('contact')"
+        (mouseleave)="onLiMouseLeave('contact')"
+        [ngClass]="{ highlighted: isHighlighted }"
+      >
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>

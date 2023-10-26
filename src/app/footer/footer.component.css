@@ -1,0 +1,64 @@
+/* footer.component.css */
+:host {
+  display: block; /* Ensures it's treated as a block-level element */
+}
+
+/* footer.component.css */
+.footer {
+  background-color: #272727;
+  color: #fff;
+  padding: 40px 0;
+  /* padding: 10px; */
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  max-width: 300px;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #ff6f61;
+}
+
+button {
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #e04138;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .footer-column {
+    flex: 1;
+    max-width: 100%;
+  }
+}

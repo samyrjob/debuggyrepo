@@ -1,0 +1,11 @@
+<h1 [ngStyle]="titleStyles">ASK & DEBUG</h1>
+<div class="input-container">
+  <input
+    type="text"
+    placeholder="Chercher..."
+    name="s"
+    id="s"
+    [(ngModel)]="searchQuery"
+  />
+  <button (click)="performSearch(searchQuery)">Search</button>
+</div>
